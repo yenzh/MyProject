@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+}
+
+/* ===== header ===== */
+header {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* ===== 電腦版導覽列 ===== */
+nav.title {
+  /* border: 1px solid #292cce; */
+  background: #bda68c;
+  display: block;
+  max-width: 1920px;
+  width: 100%;
+}
+
+nav.title ul.nav {
+  font-size: 0;
+  height: 65px;
+  padding-top: 15px;
+  padding-left: 50px;
+  z-index: 1;
+  float: right;
+}
+
+@media (min-width:992px) and (max-width: 1200px){
+  nav.title{
+    width: 100%;
+  }
+
+  nav.title ul.nav{
+    padding-left: 25px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 992px){  
+  nav.title{
+    width: 100%;
+  }
+
+  nav.title ul.nav{
+    padding-left: 0px;
+  }
+
+  nav.title > div.logo > a.logo{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  nav.title{
+    display: none;
+  }
+}
+
+nav.title li {
+  list-style: none; /* 移除項目符號 */
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0;
+  padding-right: 15px;
+}
+
+nav.title a {
+  color: inherit; /* 移除超連結顏色 */
+  text-decoration: none; /* 移除超連結底線 */
+  display: inline-block; /* 讓 <a> 填滿 <li> */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width:991px) {
+  nav.title a {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+i.fa-chevron-down.-on{
+  display: none;
+}
+
+i.fa-chevron-up{
+  display: none;
+  
+}
+
+i.fa-chevron-up.-on{
+  display: inline;
+  transition: ease-in-out 2s;
+}
+
+
+/* LOGO */
+div.logo{
+  display: inline-block;
+  height: 75px;
+}
+
+div.logo a.logo {
+  /* margin: 0 auto;*/
+  display: inline-block; 
+  /* margin-right: 250px; */
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+a.logo img {
+  height: 50px;
+
+}
+
+/* search圖示 */
+div.srch {
+  width: 100px;
+  /* background: seashell; */
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+div.srch_img span.icon {
+  /* border: 1px solid blue; */
+  margin-left: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-46%);
+  z-index: 0;
+}
+
+input#search {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+  z-index: 1;
+}
+
+/* 會員 購物車 */
+a.vector img {
+  width: 20px;
+  height: 20px;
+}
+
+a.shop img {
+  width: 20px;
+  height: 20px;
+}
+
+a.vector {
+  padding-right: 10px;
+}
+
+li.vs {
+  margin-top: 5px;
+  /* float: right; */
+}
+
+/* 下拉選單 */
+div.menu {
+  /* border: 1px solid blue; */
+  position: relative;
+  cursor: pointer;
+  /* background: #bda68c; */
+}
+
+div.menu ul.menu_list {
+  /* border: 1px solid black; */
+  padding: 0;
+  /* margin-top: 10px; */
+  list-style: none;
+  z-index: 5;
+
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+
+.menu.-on > ul.menu_list{
+  display: block;
+  background: rgb(255, 255, 255);
+  color: gray;
+}
+
+div.menu li {
+  font-size: 0;
+  padding: 0;
+  width: 70px;
+}
+
+div.menu hr {
+  width: 50%;
+}
+
+div.menu a.menu_list1 {
+  /* border: 1px solid red; */
+  width: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+/* 導覽列變色 */
+nav.title a.logo:hover{
+  border: none;
+}
+
+ul.nav li a:hover {
+  color: white;
+  /* background-color:rgb(135, 100, 100, 0.5); */
+}
+
+/* div.menu:hover ul.menu_list {
+  background: rgb(255, 255, 255);
+  color: gray;
+  display: block;
+} */
+
+nav.title > ul.nav >  li > div.menu > ul.menu_list > li >a.menu_list1:hover {
+  background: rgb(189, 177, 163);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+}
+
+.menu:hover a > i {
+  color: rgb(236, 181, 61);
+}

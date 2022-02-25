@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<title>inHouse｜商品頁</title>
+	<link href="./css/header.css" rel="stylesheet">
+	<link href="./css/hamburger.css" rel="stylesheet">
+	<link href="./css/breadcrumb.css" rel="stylesheet">
+	<link href="./css/footer.css" rel="stylesheet">
+
+	<link href="./css/product.css" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/c9d50d5c1a.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/product.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="title">
+		  <div class="logo">
+			<a href="./index.html" class="logo"><img src="./images/index/logo.png" alt="LOGO"></a>
+		  </div>
+		  <ul class="nav">
+			<li><a href="./about.html">關於我們</a></li>
+			<li>
+			  <div class="menu">
+				<a>
+				  空間
+				  <i class="fas fa-chevron-down" style="margin-left: 5px; font-size: 18px;"></i>
+				  <i class="fas fa-chevron-up" style="margin-left: 5px; font-size: 18px;"></i>
+				</a>
+				<ul class="menu_list">
+				  <li>
+					<a href="./room.html" class="menu_list1">客廳</a>
+				  </li>
+				  <hr class="hr1">
+				  <li>
+					<a href="./room.html" class="menu_list1">臥室</a>
+				  </li>
+				  <hr class="hr1">
+				  <li>
+					<a href="./room.html" class="menu_list1">廚房</a>
+				  </li>
+				</ul>
+			  </div>
+			</li>
+	
+			<li><a href="./special.html">風格靈感</a></li>
+			<li><a href="./qs.html">常見問題</a></li>
+			<li>
+			  <div class="srch">
+				<!-- <div class="srch_img">
+				  <span class="icon"><img src="./images/index/search.png" alt=""></span>
+				  <input type="search" id="search" placeholder="Search">
+				</div> -->
+			  </div>
+			</li>
+			<li class="vs">
+			  <a href="#" class="vector"><img src="./images/index/vector.png" alt="vector"></a>
+			  <a href="#" class="shop"><img src="./images/index/shop.png" alt="shop"></a>
+			</li>
+		  </ul>
+		</nav>
+	
+		<nav class="title1">
+	
+		  <div class="logo1">
+			<a href="./index.html" class="logo1"><img src="./images/index/logo.png" alt="LOGO"></a>
+		  </div>
+	
+		  <!-- <div class="srch1">
+			<div class="srch1_img">
+			  <span class="icon"><img src="./images/index/search.png" alt=""></span>
+			  <input type="search" id="search" placeholder="Search">
+			</div>
+		  </div> -->
+	
+		  <div class="icon_m">
+			<a href="#" class="vector1"><img src="./images/index/vector.png" alt="vector"></a>
+			<a href="#" class="shop1"><img src="./images/index/shop.png" alt="shop"></a>
+		  </div>
+	  
+		  <button class="hamburger hamburger--spring" type="button">
+			<span class="hamburger-box">
+			  <span class="hamburger-inner"></span>
+			</span>
+		  </button>
+	
+		  <ul class="menu1">
+			<li><a href="./about.html">關於我們</a></li>
+			<li>
+			  <div class="menu_1">
+				<a class="test">
+				  空間
+				  <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
+				  <i class="fas fa-chevron-up" style="margin-left: 5px; font-size: 18px;"></i>
+				</a>
+				<ul class="menu_list_1">
+				  <li>
+					<a href="./room.html" class="menu_list">客廳</a>
+				  </li>
+				  <li>
+					<a href="./room.html" class="menu_list">臥室</a>
+				  </li>
+				  <li>
+					<a href="./room.html" class="menu_list">廚房</a>
+				  </li>
+				</ul>
+			  </div>
+			</li>
+			<li><a href="./special.html">風格靈感</a></li>
+			<li><a href="./qs.html">常見問題</a></li>
+		  </ul>
+	
+		</nav>
+	
+	  </header>
+
+	<div class="breadcrumb">
+    <ol class="breadcrumb_list">
+      <li><a href="./index.html">首頁</a></li>  
+			<li><a href="./room.html">空間</a></li>
+			<li><a href="./room.html">臥室</a></li>
+			<li>商品頁</li>   
+    </ol>
+  </div>
+
+	<div class="main">
+		
+		<div class="product">
+			
+			<div class="pr_img">
+				<button type="button" class="up"><i class="fas fa-caret-up"></i></button>
+				<!-- <i class="fas fa-caret-left"></i> -->
+				<img src="./images/product/pr2.jpg" class ="pr_img_left" id="2">
+				<img src="./images/product/pr3.jpg" class ="pr_img_left" id="3">
+				<img src="./images/product/pr4.jpg" class ="pr_img_left" id="4">
+				<!-- <i class="fas fa-caret-right"></i> -->
+				<button type="button" class="down"><i class="fas fa-caret-down"></i></button>
+			</div>
+			
+			<div class="pr">
+				
+				<img src="./images/product/pr1.jpg" class ="pr_img_change -on" data-id="1">
+				<img src="./images/product/pr2.jpg" class ="pr_img_change" data-id="2">
+				<img src="./images/product/pr3.jpg" class ="pr_img_change" data-id="3">
+				<img src="./images/product/pr4.jpg" class ="pr_img_change" data-id="4">
+				<div class="pr_img on">
+					<i class="fas fa-caret-up"></i>
+					<button type="button" class="left"><i class="fas fa-caret-left"></i></button>
+					<img src="./images/product/pr2.jpg" class ="pr_img_left" id="2">
+					<img src="./images/product/pr3.jpg" class ="pr_img_left" id="3">
+					<img src="./images/product/pr4.jpg" class ="pr_img_ledt" id="4">
+					<button type="button" class="right"><i class="fas fa-caret-right"></i></button>
+					<i class="fas fa-caret-down"></i>
+				</div>
+			</div>
+
+
+			<div class="pr_text">
+				<h3>LINANÄS</h3>
+				<h4>單人床</h4>
+				<h4>NT$5680</h4>
+				<br>
+				<form action="#" method="post">
+					<h4>
+						<span>尺寸：</span>
+						<select name="country">
+							<option value="1" selected>單人床框</option>
+							<option value="2">單人加大床框</option>
+							<option value="3">雙人床</option>
+							<option value="4">雙人加大床框</option>
+						</select>
+					</h4>
+					<h4>
+						<span class="num">數量：</span>
+						<div class="num">
+							<button type="button" id="numSub">-</button>
+							<input id="itemnum" value="1">
+							<button type="button" id="numAdd">+</button>
+						</div>
+					</h4>
+					<h4 class="color">
+						<span>顏色：</span>
+						<div class="color">
+							<label for="color1" class="color_text">
+								<input type="radio" name="color" value="1" id="color1">
+								<img src="./images/room/c1.png" alt="">
+							</label>
+							<label for="color2" class="color_text">
+								<input type="radio" name="color" value="2" id="color2">
+								<img src="./images/room/c2.png" alt="">
+							</label>
+							<label for="color3" class="color_text">
+								<input type="radio" name="color" value="3" id="color3">
+								<img src="./images/room/c3.png" alt="">
+							</label>
+							<label for="color4" class="color_text">
+								<input type="radio" name="color" value="4" id="color4">
+								<img src="./images/room/c4.png" alt="">
+							</label>
+						</div>
+					</h4>
+					<input type="button" value="加入購物車" onclick="location.href='#'" id="shopcar">
+					<br>
+					<input type="button" value="直接購買" onclick="location.href='#'" id="shop">
+				</form>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="int">
+			<div class="int1">
+				<div class="int1_t">
+					<span><i class="far fa-thumbs-up" style="font-size: 56px;"></i></i></span>
+					<img src="./images/about/about5.png" alt="" class="int_img">
+				</div>
+				<h3>品質保固</h3>
+				<hr>
+				<div class="int1_text">
+					<span>
+						所有提供的產品皆經過測試，符合我們對品質和耐用度的嚴格要求，並符合日常使用標準。
+					</span>
+				</div>
+			</div>
+			<div class="int1">
+				<div class="int1_t">
+					<span><i class="fas fa-dolly-flatbed" style="font-size: 56px;"></i></span>
+					<img src="./images/about/about6.png" alt="" class="int_img">
+				</div>
+				<h3>專人配送</h3>
+				<hr>
+				<div class="int1_text">
+					<span>
+						所有提供的產品皆經過測試，符合我們對品質和耐用度的嚴格要求，並符合日常使用標準。
+					</span>
+				</div>
+			</div>
+			<div class="int1">
+				<div class="int1_t">
+					<span><i class="far fa-clock" style="font-size: 56px;"></i></span>
+					<img src="./images/about/about4.png" alt="" class="int_img">
+				</div>
+				<h3>七天鑑賞</h3>
+				<hr>
+				<div class="int1_text">
+					<span>
+						所有提供的產品皆經過測試，符合我們對品質和耐用度的嚴格要求，並符合日常使用標準。
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<h4 class="more_title">其他人還看了</h4>
+		<div class="product_more">
+			<button type="button">
+			  <i class="fas fa-angle-left" id="pre"></i>
+			</button>
+			<div class="hidden">
+			  <div class="commodity_more">
+				<ul style="left: 0px;">
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#" class="product">
+						  <img src="./images/product/more/more5.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>椅子</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more6.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>抱枕</h4>
+						</a>
+						<span>材質:棉</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more1.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>檯燈</h4>
+						</a>
+						<span>材質:鐵</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more2.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>毯子</h4>
+						</a>
+						<span>材質:絲質</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more3.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>收納盒</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+	  
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#" class="product">
+						  <img src="./images/product/more/more4.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>桌燈</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more5.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>層架</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more6.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>雙人床</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more7.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>層架</h4>
+						</a>
+						<span>材質:木頭</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="pr1">
+					  <div class="pr1_img">
+						<a href="#">
+						  <img src="./images/product/more/more1.jpg" alt="商品" class="product">
+						</a>
+					  </div>
+					  <div class="pr1_text">
+						<a href="#" class="pr1_text">
+						  <h4>毛毯</h4>
+						</a>
+						<span>材質:棉</span><br>
+						<span>$399元</span>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<button type="button">
+			  <i class="fas fa-angle-right" id="next"></i>
+			</button>
+		  </div>
+
+
+	</div>
+
+
+
+	<footer>
+		<div class="end">
+		  <div class="top">
+			<a href="#">
+			  <i class="fas fa-home" style="font-size:36px; color:#6e6c6c;"></i>
+			</a>
+		  </div>
+	
+		  <div class="end_logo">
+			<a href="./index.html">
+			</a>
+		  </div>
+	
+		  <div class="end_icon">
+			<i class="fab fa-facebook-square"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter-square"></i>
+		  </div>
+		  <!-- <a href="#">更多資訊</a>
+		  <a href="#">關於我們</a>
+		  <a href="#">加入我們</a> -->
+		  <hr>
+		  <p>
+			Copyright © 2021 inHouse. All rights reserved
+		</p>
+		</div>
+	  </footer>
+</body>
+
+</html>

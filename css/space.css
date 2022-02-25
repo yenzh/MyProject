@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Noto Sans TC', sans-serif; */
+}
+
+header > nav.title > ul > li:nth-child(3) > a {
+  /* border: 2px solid rgb(117, 61, 23); */
+  border-radius: 5px;
+  background-color: rgb(135, 100, 100, 0.5);
+  color: white;
+}
+
+nav.title1 > ul > li:nth-child(3) > a{
+  background-color: rgb(250, 242, 214);
+}
+
+nav.title1 > ul > li > div.menu_1 > a.test:hover{
+  background-color: rgb(250, 242, 214);
+}
+
+/* main */
+div.main {
+  /* border: 1px solid red; */
+  /* width: 1200px; */
+  width: 90%;
+  max-width: 1920;
+  margin: 0 auto;
+}
+
+/* banner */
+div.banner {
+  width: 100%;
+  max-width: 1920px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+div.banner > img {
+  width: 100%;
+}
+
+div.banner_text p {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+
+@media (max-width:1200px){
+  div.banner_text p{
+    font-size: 32px;
+  }
+}
+
+@media (max-width:991px) {
+  div.banner {
+    overflow: hidden;
+  }
+
+  div.banner > img {
+    width: 120%;
+  }
+
+  div.banner_text p{
+    font-size: 28px;
+  }
+}
+
+@media (max-width:767.98px) {
+  div.banner {
+    overflow: hidden;
+  }
+
+  div.banner > img {
+    width: 140%;
+  }
+
+  div.banner_text p{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:575.98px) {
+  div.banner {
+    overflow: hidden;
+  }
+
+  div.banner > img {
+    width: 200%;
+    transform: translateX(-20%);
+  }
+
+  div.banner_text p{
+    font-size: 20px;
+  }
+}
+
+/* ====  風格主要 ===== */
+div.simple{
+  /* border: 1px solid black; */
+  margin: 40px auto;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.simple div.simple_img{
+  width: 30%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+div.simple div.simple_img > img{
+  width: 100%;
+}
+
+div.simple > div.simple_text{
+  /* border: 1px solid blue; */
+  /* display: inline-block; */
+  margin-right: 100px;
+  margin-top: 20px;
+  width: 40%;
+  padding: 10px;
+  line-height: 30px;
+}
+
+div.simple > div.simple_text > h3{
+  margin: 20px auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+div.simple > div.simple_text > span{
+  /* border: 1px solid gray; */
+  font-size: 16px;
+}
+
+div.simple > div.simple_text > div.text_img{
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+div.text_img > img{
+  width: 30%;
+}
+
+@media(max-width:1200px){
+  div.simple div.simple_img{
+    width: 40%;
+    margin-left: 50px;
+  }
+  div.simple > div.simple_text{
+    margin-right: 50px;
+  }
+}
+
+@media(max-width:767.98px){
+  div.simple div.simple_img{
+    width: 70%;
+    margin:20px auto;
+  }
+
+  div.simple > div.simple_text{
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+  }
+
+  div.simple > div.simple_text > h3{
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+@media(max-width:575.98px){
+  div.simple > div.simple_text > h3{
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  div.simple > div.simple_text > span{
+    /* border: 1px solid gray; */
+    font-size: 14px;
+  }
+}
+
+
+/* ==== 風格次arr ==== */
+
+div.pic {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+div.pic img{
+  width: 100%;
+}
+
+div.pic > .col{
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+div.col{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+div.col  > div.item_img{
+  width: 100%;
+}
+
+div.col  > div.item_img > img{
+  width: 100%;
+}
+
+div.col > div.style_item{
+  width: 60%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+div.style_item > div.item_pr > span{
+  font-size: 16px;
+}
+  
+@media (max-width:767.98px) {
+  div.pic {
+    flex-direction: column;
+  }
+
+  div.pic > .col{
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  div.col{
+    width: 70%;
+    /* border: 1px solid red; */
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  div.col > div.style_item{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  div.col  > div.item_img > img{
+    width: 100%;
+  }
+}
+
+@media (max-width:575.98px) {
+  div.style_item > div.item_pr > span{
+    font-size: 14px;
+  }
+}

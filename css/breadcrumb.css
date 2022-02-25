@@ -1,0 +1,56 @@
+/* 麵包屑 */
+
+div.breadcrumb {
+  /* border: 1px solid blue; */
+    background-color: #faf6eb;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* position: fixed;
+    left: 50%;
+    top:80px;
+    transform: translateX(-50%); */
+    /* z-index: 1; */
+  }
+  
+  div.breadcrumb ol.breadcrumb_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+  }
+  
+  
+  div.breadcrumb ol.breadcrumb_list > li {
+    /*   border: 1px solid red; */
+    display: inline-block;
+    color: gray;
+    font-size: 16px;
+  }
+  
+  
+  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
+  div.breadcrumb ol.breadcrumb_list > li::before {
+    content: "/";
+    font-size: 18px;
+    color: gray;
+    margin: 0 10px;
+  }
+  
+  /* 第一個 li 元素，將 ::before 設定回來需要的 */
+  div.breadcrumb ol.breadcrumb_list > li:first-child::before {
+    display: none;
+  }
+  
+  div.breadcrumb ol.breadcrumb_list > li > a {
+    /*   border: 1px solid blue; */
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(187, 118, 53);
+    /* padding-top: 5px; */
+  }
+  
+  div.breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #661616;
+  }

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+	<title>inHouse｜空間</title>
+	<link href="./css/header.css" rel="stylesheet">
+	<link href="./css/hamburger.css" rel="stylesheet">
+	<link href="./css/breadcrumb.css" rel="stylesheet">
+	<link href="./css/footer.css" rel="stylesheet">
+
+	<link href="./css/room.css" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/c9d50d5c1a.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/room.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="title">
+			<div class="logo">
+				<a href="./index.html" class="logo"><img src="./images/index/logo.png" alt="LOGO"></a>
+			</div>
+			<ul class="nav">
+				<li><a href="./about.html">關於我們</a></li>
+				<li>
+					<div class="menu">
+						<a>
+							空間
+							<i class="fas fa-chevron-down" style="margin-left: 5px; font-size: 18px;"></i>
+							<i class="fas fa-chevron-up" style="margin-left: 5px; font-size: 18px;"></i>
+						</a>
+						<ul class="menu_list">
+							<li>
+								<a href="./room.html" class="menu_list1">客廳</a>
+							</li>
+							<hr class="hr1">
+							<li>
+								<a href="./room.html" class="menu_list1">臥室</a>
+							</li>
+							<hr class="hr1">
+							<li>
+								<a href="./room.html" class="menu_list1">廚房</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li><a href="./special.html">風格靈感</a></li>
+				<li><a href="./qs.html">常見問題</a></li>
+				<li>
+					<div class="srch">
+						<!-- <div class="srch_img">
+							<span class="icon"><img src="./images/index/search.png" alt=""></span>
+							<input type="search" id="search" placeholder="Search">
+						</div> -->
+					</div>
+				</li>
+				<li class="vs">
+					<a href="#" class="vector"><img src="./images/index/vector.png" alt="vector"></a>
+					<a href="#" class="shop"><img src="./images/index/shop.png" alt="shop"></a>
+				</li>
+			</ul>
+		</nav>
+
+		<nav class="title1">
+
+			<div class="logo1">
+				<a href="./index.html" class="logo1"><img src="./images/index/logo.png" alt="LOGO"></a>
+			</div>
+
+			<!-- <div class="srch1">
+				<div class="srch1_img">
+					<span class="icon"><img src="./images/index/search.png" alt=""></span>
+					<input type="search" id="search" placeholder="Search">
+				</div>
+			</div> -->
+
+			<div class="icon_m">
+				<a href="#" class="vector1"><img src="./images/index/vector.png" alt="vector"></a>
+				<a href="#" class="shop1"><img src="./images/index/shop.png" alt="shop"></a>
+			</div>
+
+			<button class="hamburger hamburger--spring" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<ul class="menu1">
+				<li><a href="./about.html">關於我們</a></li>
+				<li>
+					<div class="menu_1">
+						<a class="test">
+							空間
+							<i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
+							<i class="fas fa-chevron-up" style="margin-left: 5px; font-size: 18px;"></i>
+						</a>
+						<ul class="menu_list_1">
+							<li>
+								<a href="./room.html" class="menu_list">客廳</a>
+							</li>
+							<li>
+								<a href="./room.html" class="menu_list">臥室</a>
+							</li>
+							<li>
+								<a href="./room.html" class="menu_list">廚房</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="./special.html">風格靈感</a></li>
+				<li><a href="./qs.html">常見問題</a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<div class="breadcrumb">
+		<ol class="breadcrumb_list">
+			<li><a href="./index.html">首頁</a></li>
+			<li><a href="./room.html">空間</a></li>
+			<li>臥室</li>
+		</ol>
+	</div>
+
+	<div class="banner">
+		<img src="./images/room/banner.png" alt="">
+		<div class="banner_text">
+			<p>臥室</p>
+			<span>
+				床框不只承托床墊，
+				更是決定臥室風格的關鍵主角
+			</span>
+		</div>
+	</div>
+
+	<!-- div.main -->
+	<div class="main">
+		<!-- aside -->
+		<aside>
+			<button type="button" class="btn_hidden"><i class="fas fas fa-times"></i></button>
+			
+			<form action="#" method="post">
+				<h4>尺寸</h4>
+				<div class="size">
+					<label for="option1" class="size_text">
+						<input type="radio" name="bedsize" value="1" id="option1">
+						單人床
+					</label>
+					<label for="option2" class="size_text">
+						<input type="radio" name="bedsize" value="2" id="option2">
+						單人加大
+					</label>
+					<label for="option3" class="size_text">
+						<input type="radio" name="bedsize" value="3" id="option3">
+						雙人床
+					</label>
+					<label for="option4" class="size_text">
+						<input type="radio" name="bedsize" value="4" id="option4">
+						雙人加大
+					</label>
+				</div>
+				<!-- <hr> -->
+				<h4>材質</h4>
+				<div class="check_total">
+					<div class="check">
+						<label for="d1">
+							<input type="checkbox" name="材質" id="d1">
+							實木
+						</label>
+					</div>
+					<div class="check">
+						<label for="d2">
+							<input type="checkbox" name="材質" id="d2">
+							鐵製
+						</label>
+					</div>
+					<div class="check">
+						<label for="d3">
+							<input type="checkbox" name="材質" id="d3">
+							布/皮
+						</label>
+					</div>
+				</div>
+				<!-- <div class="check">
+					<label for="d1">
+						<input type="checkbox" name="材質" id="d1">
+						實木
+					</label>
+				</div>
+				<div class="check">
+					<label for="d2">
+						<input type="checkbox" name="材質" id="d2">
+						鐵製
+					</label>
+				</div>
+				<div class="check">
+					<label for="d3">
+						<input type="checkbox" name="材質" id="d3">
+						布/皮
+					</label>
+				</div> -->
+				<!-- <hr> -->
+				<h4>顏色</h4>
+				<div class="color">
+					<label for="color1" class="color_text">
+						<input type="radio" name="color" value="1" id="color1">
+						<img src="./images/room/c1.png" alt="">
+						黑色
+					</label>
+					<label for="color2" class="color_text">
+						<input type="radio" name="color" value="2" id="color2">
+						<img src="./images/room/c2.png" alt="">
+						米色
+					</label>
+					<label for="color3" class="color_text">
+						<input type="radio" name="color" value="3" id="color3">
+						<img src="./images/room/c3.png" alt="">
+						灰色
+					</label>
+					<label for="color4" class="color_text">
+						<input type="radio" name="color" value="4" id="color4">
+						<img src="./images/room/c4.png" alt="">
+						藍色
+					</label>
+				</div>
+
+				<!-- <div class="color">
+					<img src="./images/room/c1.png" alt="">
+					<p>黑色</p>
+				</div>
+				<div class="color">
+					<img src="./images/room/c2.png" alt="">
+					<p>米色</p>
+				</div>
+				<div class="color"><img src="./images/room/c3.png" alt="">
+					<p>灰色</p>
+				</div>
+				<div class="color"><img src="./images/room/c4.png" alt="">
+					<p>藍色</p>
+				</div> -->
+			</form>
+		</aside>
+		<!-- main -->
+		<main class="main">
+			<div class="btn_appear">
+				
+			</div>
+			<div class="main_title">
+				<h2>床組</h2>
+			</div>
+			<button type="button" class="btn_ap"><i class="fas fa-filter"></i> 篩選</button>
+			<div class="main_sel">
+				<div class="sel">
+					<span class="sel_text">排序方式：</span>
+					<select name="country">
+						<option value="1" selected>依人氣排序</option>
+						<option value="2">時間由新到舊</option>
+						<option value="3">最多瀏覽次數</option>
+					</select>
+				</div>
+			</div>
+			
+			<ul class="list_product">
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr1.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr2.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr3.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr4.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr5.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr6.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr7.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr8.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./product.html">
+						<div class="pr1_img">
+							<img src="./images/room/pr/pr9.png" alt="商品" class="product">
+						</div>
+						<div class="pr1_text">
+							<h4>雙人床</h4>
+							<span>材質:樺木</span>
+							<span>$7999元</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<div class="pag_block">
+				<ul class="pag">
+					<li><a href="#">&lt;</a></li>
+					<li><a href="#" class="on">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">&gt;</a></li>
+				</ul>
+			</div>
+		</main>
+
+		
+	</div>
+		
+	<footer>
+		<div class="end">
+			<div class="top">
+				<a href="#">
+					<i class="fas fa-home" style="font-size:36px; color:#6e6c6c;"></i>
+				</a>
+			</div>
+
+			<div class="end_logo">
+				<a href="./index.html">
+				</a>
+			</div>
+
+			<div class="end_icon">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter-square"></i>
+			</div>
+			<hr>
+			<p>
+				Copyright © 2021 inHouse. All rights reserved
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
